@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -15,11 +18,16 @@
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="#">
         <picture>
-          <img width="70" height="59" alt="Логотип продукции кэт энерджи">
+          <img src="#" href="#" width="70" height="59" alt="Логотип продукции кэт энерджи">
           <span class="main-header__logo-text">cat energy</span>
         </picture>
       </a>
       <nav class="main-nav">
+        <!-- Кнопка для выпадающего меню
+        <button class="main-nav__toggle nav--toggle-open" type="button">
+          <img src="#" width="10" height="10" alt="открыть меню">
+          <img src="#" width="10" height="10" alt="закрыть меню">
+        </button>  -->
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current" href="index.html" aria-current="page">Главная</a>
@@ -32,6 +40,7 @@
           </li>
         </ul>
       </nav>
+    </div>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Питание для котов</h1>
@@ -52,7 +61,7 @@
     <section class="programmes">
       <h2 class="visually-hidden">Виды диетических программ</h2>
       <div class="programmes__wrapper programmes-type">
-        <article class="programmes-type__item programmes-type__slim">
+        <article class="programmes-type__item programmes-type__item--slim">
           <h3 class="programmes-type__title">Похудение</h3>
           <p class="programmes-type__description">Ваш кот весит больше собаки и почти утратил способность<br>
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет<br>
@@ -60,7 +69,7 @@
           <a class="programmes-type__link" href="#">Каталог slim</a>
         </article>
 
-        <article class="programmes-type__item programmes-type__mass">
+        <article class="programmes-type__item programmes-type__item--gainmass">
           <h3 class="programmes-type__title">Похудение</h3>
           <p class="programmes-type__description">Заработать авторитет среди дворовых котов и даже собак?<br>
             Серия Cat Energy Pro поможет вашему коту нарастить<br>
@@ -83,7 +92,7 @@
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <div class="example__wrapper">
         <div class="example__value weight">
           <span class="visually-hidden">Снижение веса на:</span>
@@ -96,7 +105,7 @@
         <span class="example__result">15 000 руб.</span>
         <div class="example-slider">
 
-          <!-- слайд до - толстый котяра-->
+          <!--  слайд до - толстый котяра  -->
 
           <picture>
             <source type="image/png" media="(min-width:1440px)" srcset="images/slide-before-desktop@1x.png 1x, images/slide-before-desktop@2x.png 2x" width="560" height="512">
@@ -104,11 +113,11 @@
             <img class="example__slide-before" src="images/slide-before-mobile@1x.png" srcset="images/slide-before-mobile@2x.png 2x" width="280" height="256" alt="толстый кот">
           </picture>
 
-          <!-- Слайд после - котяра похудевший и жутко несчастный-->>
+          <!--  Слайд после - котяра похудевший и жутко несчастный  -->
 
           <picture>
             <source type="image/png" media="(min-width:1440px)" srcset="images/slide-after-desktop@1x.png 1x, images/slide-after-desktop@2x.png 2x" width="560" height="512">
-            <source type="image/png" media="(min-width:768)" srcset="images/slide-after-tablet@1x.png 1x, images/slide-after-tablet@2x.png 2x" width="560" height="512">
+            <source type="image/png" media="(min-width:768px)" srcset="images/slide-after-tablet@1x.png 1x, images/slide-after-tablet@2x.png 2x" width="560" height="512">
             <img class="example__slide-after" src="images/slide-after-mobile@1x.png" srcset="images/slide-after-mobile@2x.png 2x" width="280" height="256" alt="похудевший кот">
           </picture>
 
@@ -116,21 +125,22 @@
             <span class="visually-hidden">Потяните, чтобы сравнить результаты ДО и ПОСЛЕ</span>
           </button>
         </div>
+      </div>
     </section>
 
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Наши контакты</h2>
 
-        <!--Карта константная-->>
+        <!--  Карта константная  -->
 
         <picture>
           <source type="image/png" media="(min-width:1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width:768)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
+          <source type="image/png" media="(min-width:768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="768" height="400">
           <img class="contacts__map-constant" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="кэт энерджи. адрес на карте">
         </picture>
 
-        <a href=""></a>
+        <a href="#" alt="Как нас найти"></a>
         <div class="contacts__info">
           <span class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</span>
           <span class="contacts__street">ул. Большая Конюшенная<br> д. 19/8</span>
@@ -142,7 +152,7 @@
 
   <footer class="footer">
     <div class="footer__container">
-      <a href="#" class="footer__logo-link">CAT ENERGY</a>
+      <a class="footer__logo-link" href="#">CAT ENERGY</a>
       <div class="footer__socials">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer__social-list">
@@ -165,6 +175,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>

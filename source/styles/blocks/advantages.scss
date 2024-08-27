@@ -1,3 +1,19 @@
 .advantages {
+  font-family: $primary-font;
+}
 
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+}
+
+.advantages__item {
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
 }

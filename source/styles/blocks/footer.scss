@@ -48,22 +48,31 @@
 }
 
 
-.footer__logo-academy {
-  background-image: url("../../icons/stack.svg#html-logo-footer");
+.footer__logo-text {
+  background-image: url("../../icons/stack.svg#footer-logo-text");
   width: 168px;
   height: 37px;
 }
 
-.footer__social-item.vkontakte:hover {
+.footer__logo-pic {
+  background-image: url("../../icons/stack.svg#footer-logo-pic");
+  width: 168px;
+  height: 37px;
+}
+
+.footer__social-item.vkontakte:hover,
+.footer__social-item.vkontakte:focus {
   background-image: url("../../icons/stack.svg#vkontakte-hover");
 }
 
-.footer__social-item.youtube:hover {
+.footer__social-item.youtube:hover,
+.footer__social-item.youtube:focus {
   background-image: url("../../icons/stack.svg#youtube-hover");
 }
 
 
-.footer__social-item.telegramm:hover {
+.footer__social-item.telegramm:hover,
+.footer__social-item.telegramm:focus {
   background-image: url("../../icons/stack.svg#telegram-hover");
 }
 

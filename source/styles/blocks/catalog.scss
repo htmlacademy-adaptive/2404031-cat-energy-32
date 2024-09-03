@@ -18,6 +18,12 @@
   line-height: 20px;
   text-align: left;
   color: #222222;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .catalog-stats {
@@ -41,4 +47,13 @@
   text-align: center;
   color: #444444;
   background-color: #f2f2f2;
+}
+
+.catalog__products-descrition {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
 }

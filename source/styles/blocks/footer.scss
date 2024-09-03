@@ -1,3 +1,53 @@
-.footer {
-  background-color: #f2f2f2;
+
+.footer__container {
+  display: flex;
 }
+
+.footer__logo-link {
+  background-image: url("../../icons/stack.svg#logo-text");
+  width: 113px;
+  height: 20px;
+
+  @media (min-width: 768px) {
+    width: 128px;
+    height: 24px;
+  }
+}
+
+
+.footer__social-list {
+  @include list-style;
+  width: 132px;
+  height: 22px;
+}
+
+.footer__social-item.vkontakte {
+  width: 28px;
+  height: 22px;
+  background-image: url("../../icons/stack.svg#vkontakte-icon");
+}
+
+.footer__social-item.youtube {
+  width: 28px;
+  height: 22px;
+  background-image: url("../../icons/stack.svg#youtube-icon");
+}
+
+.footer__social-item.telegramm {
+  width: 28px;
+  height: 22px;
+  background-image: url("/../icons/stack.svg#telegram-icon");
+}
+*/
+
+.footer__logo-academy {
+  background-image: url("../../icons/stack.svg#html-logo-footer");
+  width: 168px;
+  height: 37px;
+}
+
+.footer__social-item.telegramm:hover {
+  mask-image: url("../../icons/stack.svg#telegram-icon");
+  background-color: $primary-color;
+}
+

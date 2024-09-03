@@ -10,10 +10,57 @@
   text-align: center;
 }
 
+.advantages__list {
+  @include list-style;
+}
+
 .advantages__item {
+  width: 280px;
+  height: 60px;
+}
+
+.advantages__item--benefit {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+}
+
+.advantages__item--fast {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+  background-image: url("../../icons/stack.svg#icon-instant");
+}
+
+.advantages__item--functionality {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+  background-image: url("../../icons/stack.svg#icon_eat");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding: 25px;
+}
+
+.advantages__item--health {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+  background-image: url("../../icons/stack.svg#icon-clock");
+}
+
+
+.advantages-description {
+  margin-left: 110px;
   font-family: $primary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
 }
+

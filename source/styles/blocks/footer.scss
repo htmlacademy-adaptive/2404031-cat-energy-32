@@ -14,6 +14,13 @@
   }
 }
 
+.footer__logo-link:hover {
+  filter: opacity(80%);
+}
+
+.footer__logo-link:active {
+  filter: opacity(50%);
+}
 
 .footer__social-list {
   @include list-style;
@@ -33,12 +40,13 @@
   background-image: url("../../icons/stack.svg#youtube-icon");
 }
 
+
 .footer__social-item.telegramm {
   width: 28px;
   height: 22px;
-  background-image: url("/../icons/stack.svg#telegram-icon");
+  background-image: url("../../icons/stack.svg#telegram-icon");
 }
-*/
+
 
 .footer__logo-academy {
   background-image: url("../../icons/stack.svg#html-logo-footer");
@@ -46,8 +54,21 @@
   height: 37px;
 }
 
-.footer__social-item.telegramm:hover {
-  mask-image: url("../../icons/stack.svg#telegram-icon");
-  background-color: $primary-color;
+.footer__social-item.vkontakte:hover {
+  background-image: url("../../icons/stack.svg#vkontakte-hover");
 }
 
+.footer__social-item.youtube:hover {
+  background-image: url("../../icons/stack.svg#youtube-hover");
+}
+
+
+.footer__social-item.telegramm:hover {
+  background-image: url("../../icons/stack.svg#telegram-hover");
+}
+
+.footer__social-item.vkontakte:active,
+.footer__social-item.youtube:active,
+.footer__social-item.telegramm:active {
+  filter: opacity(0.3);
+}

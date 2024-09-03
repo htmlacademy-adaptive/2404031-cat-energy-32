@@ -1,3 +1,8 @@
-.main-header {
+.main-header__logo:hover,
+.main-header__logo:focus {
+  filter: opacity(80%);
+}
 
+.main-header__logo:active {
+  filter: opacity(50%);
 }

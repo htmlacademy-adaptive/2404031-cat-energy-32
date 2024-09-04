@@ -17,6 +17,7 @@
 .advantages__item {
   width: 280px;
   height: 60px;
+  cursor: pointer;
 }
 
 .advantages__item--benefit {
@@ -39,11 +40,8 @@
   display: flex;
   width: 60px;
   height: 60px;
-  background-color: $primary-color;
   background-image: url("../../icons/stack.svg#icon_eat");
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  padding: 25px;
+  background-color: $primary-color;
 }
 
 .advantages__item--health {

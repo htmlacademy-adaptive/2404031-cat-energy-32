@@ -2,14 +2,16 @@
   background-color: #ffffff;
 }
 
+
 .catalog__main-title {
   font-family: "Oswald", sans-serif;
-  font-size: 36px;
+  font-size: 60px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 60px;
   text-align: left;
   color: #000000;
 }
+
 
 .catalog__product-title {
   font-family: "Oswald", sans-serif;
@@ -26,7 +28,7 @@
   }
 }
 
-.catalog-stats {
+.catalog__stats {
   font-family: $primary-font;
   font-size: 12px;
   font-weight: 400;
@@ -39,12 +41,7 @@
   @include primary-button;
 }
 
-.secondary-button {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
+.secondary--button {
   color: #444444;
   background-color: #f2f2f2;
 }

@@ -12,21 +12,35 @@
 
 .advantages__list {
   @include list-style;
+  display: flex;
+  flex-direction: row;
 }
 
 .advantages__item {
   width: 280px;
   height: 60px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
 
-
-.advantages__item--benefit {
-  display: flex;
+.advantages__item::before {
+  position: absolute;
+  z-index: 2;
   width: 60px;
   height: 60px;
   background-color: $primary-color;
-  background-image: url("../../icons/stack.svg#icon-leaf");
+}
+
+.advantages__item--benefit {
+  position: absolute;
+  z-index: 3;
+  width: 30px;
+  height: 32px;
+  mask-image: url("../../icons/stack.svg#icon-leaf");
+  background-color: #ffffff;
 }
 
 .advantages__item--fast {

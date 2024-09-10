@@ -36,23 +36,21 @@
   display: block;
   width: 28px;
   height: 22px;
+  background-color: #666666;
   cursor: pointer;
 }
 
 .footer__social-link--icon-vk {
   mask-image: url("../../icons/stack.svg#vkontakte-icon");
-  background-color: #666666;
 }
 
 .footer__social-link--icon-youtube {
   mask-image: url("../../icons/stack.svg#youtube-icon");
-  background-color: #666666;
 }
 
 
 .footer__social-link--icon-telegramm {
   mask-image: url("../../icons/stack.svg#telegram-icon");
-  background-color: #666666;
 }
 
 .footer__social-link:hover,
@@ -60,12 +58,11 @@
   background-color: $primary-color;
 }
 
-
 .footer__logo-text {
   mask-image: url("../../icons/stack.svg#footer-logo-text");
   background-color: #444444;
-  width: 168px;
-  height: 37px;
+  width: 113px;
+  height: 19px;
   cursor: pointer;
 }
 
@@ -77,8 +74,8 @@
 .footer__logo-pic {
   mask-image: url("../../icons/stack.svg#footer-logo-pic");
   background-color: #666666;
-  width: 168px;
-  height: 37px;
+  width: 27px;
+  height: 34px;
   cursor: pointer;
 }
 
@@ -86,7 +83,6 @@
 .footer__logo-pic:focus {
   background-color: $primary-color;
 }
-
 
 .footer__social-link:active,
 .footer__logo-text:active,

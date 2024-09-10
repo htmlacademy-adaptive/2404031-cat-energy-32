@@ -2,6 +2,19 @@
 
 .main-nav__list {
   @include list-style;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 463px;
+    height: 36px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    width: 475px;
+    height: 40px;
+  }
 }
 
 .main-nav__link {
@@ -12,6 +25,7 @@
   line-height: 20px;
   text-align: left;
   text-decoration: none;
+  text-transform: lowercase;
 
   @media (min-width: 768px) {
 

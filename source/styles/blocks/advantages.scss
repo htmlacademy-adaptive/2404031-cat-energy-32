@@ -25,7 +25,7 @@
   top: 0;
   left: 0;
 }
-
+/*
 .advantages__item::before {
   position: absolute;
   z-index: 2;
@@ -33,14 +33,13 @@
   height: 60px;
   background-color: $primary-color;
 }
+  */
 
 .advantages__item--benefit {
-  position: absolute;
-  z-index: 3;
   width: 30px;
   height: 32px;
-  mask-image: url("../../icons/stack.svg#icon-leaf");
-  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-color: $primary-color;
 }
 
 .advantages__item--fast {

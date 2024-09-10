@@ -1,0 +1,78 @@
+.advantages {
+  font-family: $primary-font;
+}
+
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+}
+
+.advantages__list {
+  @include list-style;
+  display: flex;
+  flex-direction: row;
+}
+
+.advantages__item {
+  width: 280px;
+  height: 60px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+/*
+.advantages__item::before {
+  position: absolute;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+}
+  */
+
+.advantages__item--benefit {
+  width: 30px;
+  height: 32px;
+  background-image: url("../../icons/stack.svg#icon-leaf");
+  background-color: $primary-color;
+}
+
+.advantages__item--fast {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+  background-image: url("../../icons/stack.svg#icon-instant");
+}
+
+.advantages__item--functionality {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../icons/stack.svg#icon_eat");
+  background-color: $primary-color;
+}
+
+.advantages__item--health {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+  background-image: url("../../icons/stack.svg#icon-clock");
+}
+
+
+.advantages-description {
+  margin-left: 110px;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+

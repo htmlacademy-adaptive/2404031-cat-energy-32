@@ -1,0 +1,42 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+
+@mixin primary-button {
+  background: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: lowercase;
+}
+
+
+@mixin placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.64px;
+  text-align: left;
+}
+
+@mixin list-style {
+  list-style-type: none;
+}
+
+
+$primary-color: #68b738;
+
+$tablet: 768px;
+$desktop: 1440px;
+

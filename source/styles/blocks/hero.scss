@@ -1,0 +1,35 @@
+
+
+.hero {
+  font-family: "Oswald", sans-serif;
+  background-color: rgba(104, 183, 56, 1);
+}
+
+.hero__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
+
+  @media (min-width: 768px) {
+    color: #000000;
+  }
+}
+
+.hero__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  @include primary-button;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

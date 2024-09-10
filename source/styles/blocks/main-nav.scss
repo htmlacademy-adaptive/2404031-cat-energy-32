@@ -1,0 +1,44 @@
+
+
+.main-nav__list {
+  @include list-style;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 463px;
+    height: 36px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    width: 475px;
+    height: 40px;
+  }
+}
+
+.main-nav__link {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: lowercase;
+
+  @media (min-width: 768px) {
+
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+
+  @media (min-width: 1440px) {
+    color: #000000;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+}

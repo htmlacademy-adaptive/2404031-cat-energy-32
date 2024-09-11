@@ -1,5 +1,6 @@
 .advantages {
   font-family: $primary-font;
+  width: 280px;
 }
 
 .advantages__title {
@@ -10,10 +11,74 @@
   text-align: center;
 }
 
+.advantages__list {
+  @include list-style;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .advantages__item {
+  width: 280px;
+  height: 60px;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    width: 230px;
+    height: 280px;
+  }
+}
+
+/*
+.advantages__item::before {
+  position: absolute;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+}
+  */
+
+.advantages__icon {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: $primary-color;
+}
+
+.advantages__icon--benefit {
+  background-image: url("../../icons/stack.svg#icon-leaf");
+}
+
+.advantages__icon--fast {
+  background-image: url("../../icons/stack.svg#icon-instant");
+}
+
+.advantages__icon--functionality {
+  background-image: url("../../icons/stack.svg#icon_eat");
+}
+
+.advantages__icon--health {
+  background-image: url("../../icons/stack.svg#icon-clock");
+}
+
+
+.advantages-description {
+  margin-left: 110px;
   font-family: $primary-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
+  width: 200px;
+  height: 54px;
+
+  @media (min-width: 768px) {
+    width: 204px;
+    height: 72px;
+  }
 }
+

@@ -1,14 +1,51 @@
 .catalog {
   background-color: #ffffff;
+  width: 1220px;
+  height: 1229px;
 }
+
 
 .catalog__main-title {
   font-family: "Oswald", sans-serif;
-  font-size: 36px;
+  font-size: 60px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 60px;
   text-align: left;
   color: #000000;
+}
+
+ul.catalog__product-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__product-item {
+  width: 245px;
+  height: 511px;
+  margin-right: 80px;
+}
+
+.catalog__product-item:last-child {
+  margin-right: 0;
+}
+
+.catalog__product-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 169px;
+  height: 471px;
+  margin: 81px 38px 40px;
+}
+
+.catalog__product-item-image {
+  margin: 19px 4px;
+}
+
+.catalog__product-image-link {
+  display: block;
+  width: 169px;
+  height: 210px;
 }
 
 .catalog__product-title {
@@ -16,29 +53,79 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: left;
+  text-align: center;
   color: #222222;
+  text-transform: uppercase;
+  width: 76px;
+  margin-right: 14px;
+  margin-left: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 135px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 140px;
+  }
 }
 
-.catalog-stats {
+.catalog__stats {
   font-family: $primary-font;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
   color: #444444;
+
+
+  @media (min-width: 768px) {
+    width: 250px;
+    height: 84px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 169px;
+    height: 89px;
+  }
+}
+
+.catalog__stats-property {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  height: 16px;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    width: 250px;
+    height: 20px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: 1440px) {
+    width: 169px;
+    height: 20px;
+  }
 }
 
 .catalog__button {
   @include primary-button;
+  padding: 10px 53px 10px 54px;
+  text-transform: uppercase;
 }
 
-.secondary-button {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
+.secondary--button {
   color: #444444;
   background-color: #f2f2f2;
+}
+
+.catalog__products-descrition {
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #444444;
 }

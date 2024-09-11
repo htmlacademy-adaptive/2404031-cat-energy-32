@@ -1,5 +1,10 @@
 .example {
   background-color: #eaeaea;
+  display: block;
+
+  @media (min-width: 1440px) {
+    display: flex;
+  }
 }
 
 .example__title {
@@ -8,15 +13,38 @@
   font-weight: 400;
   line-height: 40px;
   text-align: center;
+  width: 195px;
+  height: 40px;
+
+  @media (min-width: 768px) {
+    width: 325px;
+    height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
   font-family: $primary-font;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 18px;
   text-align: left;
   color: #444444;
+  width: 280px;
+  height: 108px;
+
+  @media (min-width: 768px) {
+    width: 708px;
+    height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 436px;
+    height: 96px;
+  }
 }
 
 .example__value {
@@ -31,17 +59,27 @@
 .example__text {
   font-family: $primary-font;
   font-size: 12px;
-  font-weight: 400;
   line-height: 12px;
+  font-weight: 400;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__text-result {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
   text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__text-sum {
@@ -52,4 +90,10 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
+

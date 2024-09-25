@@ -1,13 +1,3 @@
-.main-header__logo:hover,
-.main-header__logo:focus {
-  filter: opacity(80%);
-}
+.main-header {
 
-.main-header__logo:active {
-  filter: opacity(50%);
-}
-
-.main-header__wrapper {
-  display: flex;
-  justify-content: space-between;
 }

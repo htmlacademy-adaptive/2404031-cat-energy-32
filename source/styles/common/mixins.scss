@@ -11,14 +11,8 @@
 
 @mixin primary-button {
   background: #68b738;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  text-decoration: none;
   color: #ffffff;
-  text-transform: lowercase;
+  text-decoration: none;
 }
 
 
@@ -28,6 +22,20 @@
   font-weight: 400;
   line-height: 29.64px;
   text-align: left;
+  min-height: 56px;
+}
+
+@mixin list-style {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+$primary-color: #68b738;
+
+@mixin position {
+  content: "";
+  position: absolute;
 }
 
 @mixin list-style {

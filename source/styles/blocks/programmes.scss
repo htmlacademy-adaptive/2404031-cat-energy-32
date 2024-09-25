@@ -2,6 +2,109 @@
   font-family: $primary-font;
 }
 
+.programmes__wrapper {
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
+    margin: 0 110px;
+    margin-top: 266px;
+  }
+}
+
+
+.programmes__type {
+  background-color: #f2f2f2;
+  width: 280px;
+  margin: 0 20px;
+  min-height: 266px;
+
+
+  @media (min-width: $tablet) {
+    width: 708px;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 71px;
+  }
+}
+
+.programmes__type--slim {
+  position: relative;
+}
+
+.programmes__type--slim::before {
+
+  content: "";
+  background: url("../../icons/stack.svg#cat-slim") no-repeat 0 0;
+  width: 50px;
+  height: 53px;
+  position: absolute;
+  left: 20px;
+  top: 21px;
+
+  @media (min-width: $tablet) {
+    width: 200px;
+    height: 211px;
+    left: 445px;
+    top: 81px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 101px;
+    height: 101px;
+    left: 52px;
+    top: 43px;
+  }
+}
+
+.programmes__type--mass {
+  position: relative;
+  margin-top: -5px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.programmes__type--mass::before {
+
+  content: "";
+  background: url("../../icons/stack.svg#cat-mass") no-repeat 0 0;
+  width: 67px;
+  height: 50px;
+  position: absolute;
+  left: 20px;
+  top: 21px;
+
+  @media (min-width: $tablet) {
+    width: 268px;
+    height: 200px;
+    left: 411px;
+    top: 91px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 134px;
+    height: 100px;
+    left: 33px;
+    top: 47px;
+  }
+
 .programmes__type {
   background-color: #f2f2f2;
   width: 280px;
@@ -14,7 +117,30 @@
   font-weight: 400;
   line-height: 37px;
   text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+  min-width: 110px;
+  margin-left: 90px;
+  padding-top: 30px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet) {
+    padding-top: 77px;
+    margin-left: 52px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 206px;
+    margin: 0;
+    margin-left: 214px;
+    margin-bottom: 73px;
+  }
+
 }
+
 
 .programmes__type-description {
   font-family: "Lato", sans-serif;
@@ -50,4 +176,44 @@
   line-height: 16px;
   text-align: center;
   color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  margin-left: 20px;
+  padding-bottom: 22px;
+  text-decoration: none;
+
+  @media (min-width: $tablet) {
+    margin-left: 52px;
+    padding-bottom: 58px;
+    font-size: 20px;
+    line-height: 29.64px;
+  }
 }
+
+
+.programmes__type-link::after {
+  content: "";
+  background: url("../../icons/stack.svg#icon_arrow") no-repeat;
+  width: 32px;
+  height: 10px;
+  position: absolute;
+  right: 130px;
+  transform-origin: left center;
+
+
+  @media (min-width: $tablet) {
+    right: 495px;
+    top: 11px;
+  }
+
+  @media (min-width: $desktop) {
+    right: 357px;
+  }
+}
+
+.programmes__type-link:is(:hover, :focus-visible, :focus)::after {
+  transform: scaleX(1.35);
+  transition: all 0.3s linear;
+}
+

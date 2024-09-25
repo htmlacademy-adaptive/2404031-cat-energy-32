@@ -1,3 +1,93 @@
 .main-header {
+  height: 65px;
+}
 
+
+.main-header__logo:hover,
+.main-header__logo:focus {
+  filter: opacity(80%);
+}
+
+.main-header__logo:active {
+  filter: opacity(50%);
+}
+
+.main-header__wrapper {
+  margin: 13px 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    width: 704;
+    min-height: 50px;
+    margin-top: 71px;
+    margin-bottom: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 55px 110px;
+    width: 1220px;
+  }
+}
+
+.main-header__wrapper-index {
+  margin: 13px 21px 14px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 704;
+    min-height: 50px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 55px 110px;
+    width: 1220px;
+  }
+}
+
+.main-header__wrapper-index::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.8), rgba(104, 183, 56, 0.8)), url("/../../images/index-backgroundcat-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 320px;
+  top: 55px;
+  left: -20px;
+  height: 302px;
+  z-index: -2;
+
+  @media (min-width: $tablet) {
+    background-image: none;
+  }
+
+
+  @media (min-width: $desktop) {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(90deg, #ffffff 41%, $primary-color 41%, rgba(104, 183, 56, 0.8)), url("/../../images/index-catbackground-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 694px;
+    top: -55px;
+    z-index: -1;
+    left: 110px;
+  }
+}
+
+
+.main-header__logo-link.cattext--logo {
+  margin: 0;
+  width: 101px;
 }

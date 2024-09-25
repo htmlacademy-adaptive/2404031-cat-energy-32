@@ -1,0 +1,140 @@
+
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    width: 708px;
+    padding: 55px 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    align-items: center;
+  }
+}
+
+
+.cattext--logo {
+  mask-image: url("../../icons/stack.svg#logo-text");
+  background-color: #111111;
+  width: 128px;
+  height: 24px;
+  margin: 40px 76px;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 128px;
+    height: 24px;
+    margin: 0;
+  }
+}
+
+
+.cattext--logo:hover,
+.cattext--logo:focus {
+  background-color: #3e3e3e;
+}
+
+.cattext--logo:active {
+  background-color: #6b6b6b;
+}
+
+.footer__social-list {
+
+  margin: 0 74px 40px;
+
+  @include list-style;
+  width: 132px;
+  height: 22px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
+}
+
+.footer__social-link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+  cursor: pointer;
+}
+
+.footer__social-link--icon-vk {
+  mask-image: url("../../icons/stack.svg#vkontakte-icon");
+}
+
+.footer__social-link--icon-youtube {
+  mask-image: url("../../icons/stack.svg#youtube-icon");
+}
+
+
+.footer__social-link--icon-telegramm {
+  mask-image: url("../../icons/stack.svg#telegram-icon");
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus {
+  background-color: $primary-color;
+}
+
+.footer__logo-academy {
+  width: 280px;
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 168px;
+    height: 37px;
+    margin-bottom: 0;
+  }
+}
+
+
+.footer__logo-text {
+  mask-image: url("../../icons/stack.svg#footer-logo-text");
+  background-color: #444444;
+  width: 113px;
+  height: 19px;
+  cursor: pointer;
+  padding: 7px 0;
+}
+
+.footer__logo-text:hover,
+.footer__logo-text:focus {
+  filter: opacity(80%);
+}
+
+.footer__logo-pic {
+  mask-image: url("../../icons/stack.svg#footer-logo-pic");
+  background-color: #666666;
+  width: 27px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.footer__logo-pic:hover,
+.footer__logo-pic:focus {
+  background-color: $primary-color;
+}
+
+.footer__social-link:active,
+.footer__logo-text:active,
+.footer__logo-pic:active {
+  filter: opacity(0.3);
+}

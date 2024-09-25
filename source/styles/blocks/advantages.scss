@@ -1,0 +1,63 @@
+.advantages {
+  font-family: $primary-font;
+}
+
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  margin-top: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+  }
+}
+
+.advantages__list {
+  @include list-style;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 39px;
+
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    width: 629px;
+    height: 597px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    flex-wrap: nowrap;
+    width: 1220px;
+    height: 280px;
+  }
+}
+
+.advantages__list {
+  @include list-style;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.advantages__item {
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}

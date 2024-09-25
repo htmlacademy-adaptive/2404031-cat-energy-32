@@ -1,5 +1,9 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  font-family: $primary-font;
+}
+
+.main-header__logo-link.cattext--logo {
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }

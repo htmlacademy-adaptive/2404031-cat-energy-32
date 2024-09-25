@@ -57,6 +57,21 @@
   line-height: 16px;
   text-align: left;
   color: #222222;
+
+  text-transform: uppercase;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
 }
 
 .additional-products__box {
@@ -97,9 +112,39 @@
     grid-column: 3/4;
     grid-row: 1/2;
   }
+
+}
+
+.additional-products__benefit {
+  background-image: url("/../../images/cat-catalog-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 280px;
+  height: 290px;
+  margin-top: 73px;
+
+  @media (min-width: $desktop) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+.additional-products__benefit-description {
+
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  height: 290px;
+  padding: 186.96px 61px 43.02px 58px;
+  width: 161px;
+
 }
 
 .additional-products__benefit {
   background: #68b738;
+
 }
 

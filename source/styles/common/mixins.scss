@@ -11,8 +11,17 @@
 
 @mixin primary-button {
   background: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+
   color: #ffffff;
   text-decoration: none;
+
 }
 
 
@@ -40,11 +49,13 @@ $primary-color: #68b738;
 
 @mixin list-style {
   list-style-type: none;
+  padding: 0;
 }
 
 
 $primary-color: #68b738;
 
-$tablet: 768px;
-$desktop: 1440px;
-
+@mixin position {
+  content: "";
+  position: absolute;
+}
